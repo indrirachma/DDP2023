@@ -14,25 +14,37 @@ class Animals:
 
 class Badak(Animals):
     def one(self):
-        print("Badak adalah hewan langka.")
+        print(self.nama, "adalah hewan langka.")
+
+    def attack(self):
+        print(self.nama, "menyerang dengan tanduk.")
 
 class Ikan(Animals):
     def two(self):
-        print("Hiu merupakan hewan purba.")
+        print(self.nama, "Hiu merupakan hewan purba.")
+
+    def swim(self):
+        print(self.nama, "sedang berenang.")
 
 class Ular(Animals):
     def three(self):
-        print("Ular adalah hewan yang berbisa.")
+        print(self.nama, "adalah hewan yang berbisa.")
+
+    def slither(self):
+        print(self.nama, "sedang merayap.")
 
 # akses method
 a = Badak("Badak", "Herbivora", "Darat", "Vivipar",)
 a.info()
 a.one()
+a.attack()
 
 b = Ikan("Ikan", "Omnivora", "Air", "Ovovivipar")
 b.info()
 b.two()
+b.swim()
 
 c = Ular("Ular", "Karnivora", "Amfibi", "Ovovivipar")
 c.info()
 c.three()
+c.slither()
