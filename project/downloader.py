@@ -16,6 +16,8 @@ def main():
         """Show a message on message_label"""
         if type == "error":
             message_label.configure(text=text, text_color="red")
+            video_title_label.configure(text="")
+            video_size_label.configure(text="")
         elif type == "success":
             message_label.configure(text=text, text_color="green")
         elif type == "proccess":
