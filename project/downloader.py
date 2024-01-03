@@ -165,7 +165,7 @@ def main():
     # App Main Window
     app = customtkinter.CTk()
     app.title("Youtube Downloader")
-    center_window(app, 400, 330)
+    center_window(app, 400, 340)
     app.resizable(False, False)
 
     # Title Label
@@ -187,8 +187,8 @@ def main():
     url_entry.bind("<Control-z>", lambda event: delete_url())
 
     # Menssage Label
-    message_label = customtkinter.CTkLabel(app, wraplength=200, text="")
-    message_label.pack(padx=10, pady=10)
+    message_label = customtkinter.CTkLabel(app, wraplength=300, text="")
+    message_label.pack(padx=10, pady=(10, 5))
 
     # Video Tittle Label
     video_title_label = customtkinter.CTkLabel(app, text="", wraplength=300)
